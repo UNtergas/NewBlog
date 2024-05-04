@@ -46,6 +46,10 @@ function getNewsForYearAndMonth(year: string | number, month: string | number): 
         return newsYear === +year && newsMonth === +month;
     });
 }
+function getNewsBySlug(slug: string): NewsItem | undefined {
+    return DUMMY_NEWS.find((news: NewsItem) => news.slug === slug);
+}
+
 const newsRepository = {
     getAllNews,
     getLatestNews,
@@ -53,6 +57,7 @@ const newsRepository = {
     getAvailableNewsMonths,
     getNewsForYear,
     getNewsForYearAndMonth,
+    getNewsBySlug,
 }
 
 export default newsRepository;

@@ -11,10 +11,12 @@ export const metadata: Metadata = {
 
 
 
-export default function NewsLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
+export default function NewsLayout({ modal, children, }: Readonly<{ modal: React.ReactNode, children: React.ReactNode }>) {
     return (
-        <div className="news-article">
+        <div>
             {children}
+            {modal}
         </div>
+
     );
 }

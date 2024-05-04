@@ -1,5 +1,5 @@
 import React from "react";
-import NavLink from "@/components/server/NavLink";
+import NavLink from "@/components/client/NavLink";
 import Image from "next/image";
 import Icon from "@assets/icon/logo.jpg"
 import Link from "next/link";
@@ -16,10 +16,10 @@ export default function Header() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink href="/news" name="News" />
+                        <NavLink href="/news" > News</NavLink>
                     </li>
                     <li>
-                        <NavLink href="/archive" name="Archive" />
+                        <NavLink href="/archive" > Archive</NavLink>
                     </li>
                 </ul>
             </nav>

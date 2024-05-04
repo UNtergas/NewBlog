@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function NewsLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
     return (
         <div>
-            <ArchiveNav />
+            {/* <ArchiveNav /> */}
             {children}
         </div>
     );
